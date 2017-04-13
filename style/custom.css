@@ -392,6 +392,10 @@ body {
 .img-circle {
     border-radius: 50%
 }
+.social-link-footer {
+    font-size: 20px;
+    margin: 0 10px;
+}
 
 hr {
     margin-top: 22px;
