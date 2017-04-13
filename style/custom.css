@@ -276,13 +276,6 @@ body {
     visibility: hidden;
 }
 
-.wf-loading h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .header-font-family, .product_list_widget li {
-    opacity: 0;
-}
-
-.ie.wf-loading h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .header-font-family, .product_list_widget li {
-    visibility: hidden;
-}
 
 .logo img {
     padding-top: 20px;
@@ -8257,7 +8250,11 @@ div.pp_overlay {
 
 .home-2 .home-info {
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
+    background-image: url("../files/bg-menu.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home-2 #scene {
@@ -8393,7 +8390,7 @@ div.pp_overlay {
         min-height: 100%;
         left: 0;
         width: 380px;
-        background: #fff;
+        background-color: #fff;
         z-index: 2;
         padding-left: 30px;
         padding-right: 30px
@@ -25942,4 +25939,44 @@ div.postbox div.inside {
     -ms-transition-duration: 0s;
     -o-transition-duration: 0s;
     transition-duration: 0s
+}
+
+.sheet.sheet-1 {
+    position: absolute;
+    right: -85px;
+    transition: right .7s;
+}
+.sheet.sheet-2 {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    transition: left .7s, top .7s;
+}
+.sheet.sheet-3 {
+    position: absolute;
+    left: -24px;
+    bottom: 0;
+    transition: left .7s, bottom .7s;
+}
+
+.home-2.loaded .home-content .sheet.sheet-1 {
+    position: absolute;
+    right: 200px;
+    transition: right .7s;
+}
+.home-2.loaded .home-content .sheet.sheet-2 {
+    position: absolute;
+    left: calc(20% - 285px);
+    top: 10%;
+    transition: left .7s, top .7s;
+}
+.home-2.loaded .home-content .sheet.sheet-3 {
+    position: absolute;
+    left: -309px;
+    bottom: 0;
+    transition: left .7s, bottom .7s;
+}
+
+.layer-btn {
+    z-index: 2;
 }
