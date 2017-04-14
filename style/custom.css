@@ -14931,9 +14931,9 @@ ul.picker__list {
 }
 
 #menu-list-new .menu-content .menu-item {
-    display: inline-block;
+    display: block;
     width: 50%;
-    float: none;
+    float: left;
     vertical-align: top;
     text-align: left;
     padding: 0 15px
@@ -25987,4 +25987,18 @@ div.postbox div.inside {
 
 .layer-btn {
     z-index: 2;
+}
+
+
+
+.page-menu #scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    z-index: 1;
 }
