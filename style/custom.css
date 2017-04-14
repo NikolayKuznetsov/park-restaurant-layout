@@ -15029,7 +15029,7 @@ ul.picker__list {
 }
 
 .boxed-section-header .menu-category {
-    padding: 60px 0
+    padding: 80px 0
 }
 
 .boxed-section-header .menu-category h2 {
@@ -26001,4 +26001,8 @@ div.postbox div.inside {
     list-style: none;
     overflow: hidden;
     z-index: 1;
+}
+.page-menu #scene .layer {
+    height: 100%;
+    width: 100%;
 }
