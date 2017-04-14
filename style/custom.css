@@ -280,7 +280,6 @@ body {
     visibility: hidden;
 }
 
-
 .logo img {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -396,6 +395,7 @@ body {
 .img-circle {
     border-radius: 50%
 }
+
 .social-link-footer {
     font-size: 20px;
     margin: 0 10px;
@@ -8259,7 +8259,7 @@ div.pp_overlay {
 .home-2 .home-info {
     padding-left: 15px;
     padding-right: 15px;
-    background-image: url("../files/bg-menu.png");
+    background-image: url("../files/bg-menu-2.png");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25954,12 +25954,14 @@ div.postbox div.inside {
     right: -85px;
     transition: right .7s;
 }
+
 .sheet.sheet-2 {
     position: absolute;
     left: 15%;
     top: 10%;
     transition: left .7s, top .7s;
 }
+
 .sheet.sheet-3 {
     position: absolute;
     left: -24px;
@@ -25972,12 +25974,14 @@ div.postbox div.inside {
     right: 200px;
     transition: right .7s;
 }
+
 .home-2.loaded .home-content .sheet.sheet-2 {
     position: absolute;
     left: calc(20% - 285px);
     top: 10%;
     transition: left .7s, top .7s;
 }
+
 .home-2.loaded .home-content .sheet.sheet-3 {
     position: absolute;
     left: -309px;
@@ -25988,8 +25992,6 @@ div.postbox div.inside {
 .layer-btn {
     z-index: 2;
 }
-
-
 
 .page-menu #scene {
     position: absolute;
@@ -26002,7 +26004,41 @@ div.postbox div.inside {
     overflow: hidden;
     z-index: 1;
 }
+
 .page-menu #scene .layer {
     height: 100%;
     width: 100%;
+}
+
+.btn-download-pdf {
+    border: 2px solid #333333;
+    color: #333333;
+    display: inline-block;
+    padding: 25px 60px;
+    font-size: 1em;
+}
+
+.center-block {
+    float: left;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.center-block .btn-download-pdf {
+    margin: 40px auto 10px;
+    position: relative;
+}
+
+.center-block .btn-download-pdf:before {
+    content: '';
+    background: url("../files/icon-pdf.png");
+    width: 42px;
+    height: 49px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -29px;
 }
