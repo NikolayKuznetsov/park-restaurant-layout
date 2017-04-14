@@ -25993,7 +25993,8 @@ div.postbox div.inside {
     z-index: 2;
 }
 
-.page-menu #scene {
+.page-menu #scene,
+.page-contact #scene {
     position: absolute;
     top: 0;
     left: 0;
@@ -26005,9 +26006,15 @@ div.postbox div.inside {
     z-index: 1;
 }
 
-.page-menu #scene .layer {
+.page-menu #scene .layer,
+.page-contact #scene .layer {
     height: 100%;
     width: 100%;
+}
+
+.page-menu #scene .layer .sheet.sheet-3,
+.page-contact #scene .layer .sheet.sheet-3 {
+    bottom: 280px;
 }
 
 .btn-download-pdf {
