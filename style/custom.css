@@ -2704,13 +2704,15 @@ a.badge:focus, a.badge:hover {
     .hidden-xs {
         display: none !important
     }
+
     .home-2 .home-info {
         padding: 50px 20px !important;
     }
+
     .page-element-sheets #scene,
     .page-menu #scene,
     .page-contact #scene {
-       display: none;
+        display: none;
     }
 }
 
@@ -26060,4 +26062,45 @@ div.postbox div.inside {
     right: 0;
     margin: 0 auto;
     top: -29px;
+}
+
+.frame-field-text {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.frame-field-text input.form-text {
+    border: 2px solid #fff;
+    background: transparent;
+    margin: 0 0 24px 0;
+}
+
+.modal-custom {
+    position: fixed;
+    background: #fff;
+    color: #333;
+    width: 480px;
+    height: 360px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-custom .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+}
+
+.modal-custom.open {
+    visibility: visible;
+    opacity: 1;
 }

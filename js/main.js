@@ -225,6 +225,7 @@ function resetReservation() {
             $('.reservation-form-1').velocity({translateX: '0', opacity: 1}, 0).css('display', 'block');
             $('.reservation-form-2').velocity({translateX: '100%', opacity: 0}, 0).css('display', 'block');
             $('.reservation-form-3').velocity({translateX: '200%', opacity: 0}, 0).css('display', 'block');
+            $('.reservation-form-4').velocity({translateX: '200%', opacity: 0}, 0).css('display', 'block');
             $('.ui-datepicker').addClass('reservation-datepicker');
 
             $('.home-2 .home-content .first-line').velocity({
@@ -257,6 +258,7 @@ function homeBackReservation() {
     $('.reservation-form-1').velocity({translateX: '0', opacity: 1}, 0).css('display', 'block');
     $('.reservation-form-2').velocity({translateX: '100%', opacity: 0}, 0).css('display', 'block');
     $('.reservation-form-3').velocity({translateX: '200%', opacity: 0}, 0).css('display', 'block');
+    $('.reservation-form-4').velocity({translateX: '200%', opacity: 0}, 0).css('display', 'block');
     $('.home-reservation-back').velocity({opacity: 0}, {display: 'none'});
 
     $('.home-2 .home-content .first-line').velocity({
@@ -632,6 +634,7 @@ $(document).ready(function () {
             $('#reservation-trigger').show(0);
             $('.reservation-form-2').velocity({translateX: '100%', opacity: 0}, 0);
             $('.reservation-form-3').velocity({translateX: '200%', opacity: 0}, 0);
+            $('.reservation-form-4').velocity({translateX: '200%', opacity: 0}, 0);
             $('.ui-datepicker').addClass('reservation-datepicker');
 
             $('.home-2 .home-content .first-line').velocity({
@@ -703,9 +706,20 @@ $(document).ready(function () {
             $('.reservation-form-3').velocity({translateX: '0', opacity: 1}, 1500, 'easeOutQuint');
         });
 
+        $('.party-submit .form-next-step').click(function () {
+            $('.reservation-form-3').velocity({translateX: '-100%', opacity: 0}, 1500, 'easeOutQuint', function () {
+                $(this).hide(0);
+            });
+            $('.reservation-form-4').velocity({translateX: '0', opacity: 1}, 1500, 'easeOutQuint');
+        });
+
         $('.reservation-submit .form-next-step').click(function (e) {
-            $('.otw-widget-form').submit();
-            resetReservation();
+            // $('.otw-widget-form').submit();
+             resetReservation();
+            $('.modal-custom').addClass('open');
+            setTimeout(function(){
+                $('.modal-custom').removeClass('open');
+            }, 7000);
         });
 
     }
