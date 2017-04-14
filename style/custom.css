@@ -25993,6 +25993,7 @@ div.postbox div.inside {
     z-index: 2;
 }
 
+.page-element-sheets #scene,
 .page-menu #scene,
 .page-contact #scene {
     position: absolute;
@@ -26006,12 +26007,14 @@ div.postbox div.inside {
     z-index: 1;
 }
 
+.page-element-sheets #scene .layer,
 .page-menu #scene .layer,
 .page-contact #scene .layer {
     height: 100%;
     width: 100%;
 }
 
+.page-element-sheets #scene .layer .sheet.sheet-3,
 .page-menu #scene .layer .sheet.sheet-3,
 .page-contact #scene .layer .sheet.sheet-3 {
     bottom: 280px;
