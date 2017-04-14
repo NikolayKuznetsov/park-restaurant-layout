@@ -137,6 +137,10 @@ td, th {
     padding: 0
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
 @media print {
     * {
         text-shadow: none !important;
