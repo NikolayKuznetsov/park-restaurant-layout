@@ -1,3 +1,4 @@
+
 //Request animation frame polyfill
 !function () {
     for (var a = 0, b = ["ms", "moz", "webkit", "o"], c = 0; c < b.length && !window.requestAnimationFrame; ++c)window.requestAnimationFrame = window[b[c] + "RequestAnimationFrame"], window.cancelAnimationFrame = window[b[c] + "CancelAnimationFrame"] || window[b[c] + "CancelRequestAnimationFrame"];
@@ -143,7 +144,7 @@
     l = !((-1 < m.indexOf("iPhone") || -1 < m.indexOf("iPad") || -1 < m.indexOf("iPod")) && e && 534 > e || d.operamini && "[object OperaMini]" === {}.toString.call(d.operamini) || n && 7458 > t || -1 < f.indexOf("Android") && e && 533 > e || h && 6 > h || "palmGetResource" in d && e && 534 > e || -1 < f.indexOf("MeeGo") && -1 < f.indexOf("NokiaBrowser/8.5.0") || k && 6 >= k)
 })(jQuery, window);
 
-"use strict";
+//"use strict";
 var $ = jQuery.noConflict();
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
@@ -315,6 +316,19 @@ if (menuLang.length > 0) {
 }
 
 
+// $('.gallery-popup-link').magnificPopup({
+//     type:'image',
+//     callbacks: {
+//         elementParse: function(item) {
+//             // Function will fire for each target element
+//             // "item.el" is a target DOM element (if present)
+//             // "item.src" is a source that you may modify
+//
+//             console.log(item); // Do whatever you want with "item" object
+//         }
+//     }
+// });
+
 if (window.location.hash == '#reservation') {
     if ($window.width() > 991) {
         setTimeout(function () {
@@ -331,7 +345,8 @@ if (window.location.hash == '#reservation') {
 }
 
 $(document).ready(function () {
-    "use strict";
+    //"use strict";
+
 
     $window.on('resize', function () {
         if (mobile || $window.outerWidth() < 992) {
@@ -715,9 +730,9 @@ $(document).ready(function () {
 
         $('.reservation-submit .form-next-step').click(function (e) {
             // $('.otw-widget-form').submit();
-             resetReservation();
+            resetReservation();
             $('.modal-custom').addClass('open');
-            setTimeout(function(){
+            setTimeout(function () {
                 $('.modal-custom').removeClass('open');
             }, 7000);
         });
@@ -843,7 +858,7 @@ function repositionPicker() {
 }
 
 $(window).load(function () {
-    "use strict";
+   // "use strict";
 
     if ($('#preloader').length > 0) {
         $('.content-wrapper').velocity({opacity: 1}, 0);
@@ -3227,3 +3242,5 @@ $('.contact-info-table').height($('.contact-info').height() - 180);
 $(window).resize(function () {
     $('.contact-info-table').height($('.contact-info').height() - 180);
 });
+
+
